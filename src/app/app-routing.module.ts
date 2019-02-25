@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ComplevelComponent } from './components/pages/complevel/complevel.component';
 import { AddplayerComponent } from './components/pages/addplayer/addplayer.component';
 import { AddteamComponent } from './components/pages/addteam/addteam.component';
 import { TeamComponent } from './components/pages/team/team.component';
@@ -18,10 +17,10 @@ import { RegisterComponent } from './components/pages/register/register.componen
 import { ProfileComponent } from './components/pages/profile/profile.component';
 import { AuthGuardService} from './services/auth/auth-guard.service';
 import { PlayerProfileComponent } from './components/pages/player-profile/player-profile.component';
+import { JoinComponent } from './components/pages/join/join.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent},
-  { path: 'complevelpage', component: ComplevelComponent},
   { path: 'addplayer', component: AddplayerComponent},
   { path: 'addteam', component: AddteamComponent},
   { path: 'team', component: TeamComponent},
@@ -37,6 +36,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent},
   { path: 'profile',component:ProfileComponent,canActivate:[AuthGuardService]},
   { path: 'profile/:id', component: PlayerProfileComponent},
+  { path: 'join', component: JoinComponent, canActivate:[AuthGuardService]},
 
 ];
 

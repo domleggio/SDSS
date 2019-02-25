@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ComplevelComponent } from './complevel.component';
+import { JoinComponent } from './join.component';
 
-describe('ComplevelComponent', () => {
-  let component: ComplevelComponent;
-  let fixture: ComponentFixture<ComplevelComponent>;
+describe('JoinComponent', () => {
+  let component: JoinComponent;
+  let fixture: ComponentFixture<JoinComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ComplevelComponent ]
+      declarations: [ JoinComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ComplevelComponent);
+    fixture = TestBed.createComponent(JoinComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

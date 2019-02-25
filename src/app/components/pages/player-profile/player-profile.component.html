@@ -6,10 +6,8 @@
       <div class="col-lg-6">
         <div class="card" style="width: 71rem; height: 45rem">
           <div class="card-body">
-
             <h1>Player: {{user?.name}} </h1>
-            <table class="table table-bordered">
-              
+            <table class="table table-bordered">       
                 <tr>
                   <th>GP</th>
                   <th>FG</th>
@@ -46,7 +44,6 @@
                   <td>{{user?.PTS}}</td>
                   <td>{{user?.PPG}}</td>
                 </tr>
-              
             </table>
           </div>
         </div>
@@ -85,19 +82,15 @@
               </tr>
               <tr *ngFor="let team of teams">
                 <th>{{team?.name}}</th>
+                <th>{{team?.name}}</th>
                   </tr>
               <tr *ngFor="let match of match">
                 <td>{{match.location}}</td>
                 <td>{{match.startDate}}</td>
               </tr>
             </table>
-
-
           </div>
         </div>
-
-
-
       </div>
     </div>
     <div class="row">

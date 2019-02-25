@@ -20,7 +20,8 @@ body{
     margin-top: 10px;
     border-radius: 10px;
 }
-a{
+.joinTeam{
+    color: white;
     text-decoration: none;
 }
 button{

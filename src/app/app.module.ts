@@ -15,7 +15,6 @@ import { MatchService } from './services/match/match.service';
 //components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { ComplevelComponent } from './components/pages/complevel/complevel.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AddteamComponent } from './components/pages/addteam/addteam.component';
 import { AddplayerComponent } from './components/pages/addplayer/addplayer.component';
@@ -38,6 +37,7 @@ import { ListMatchesComponent } from './components/list-matches/list-matches.com
 import { FetchProfileService } from './services/entities/fetch-profile.service';
 import { AuthGuardService } from './services/auth/auth-guard.service';
 import { PlayerProfileComponent } from './components/pages/player-profile/player-profile.component';
+import { JoinComponent } from './components/pages/join/join.component';
 
 
 
@@ -45,7 +45,6 @@ import { PlayerProfileComponent } from './components/pages/player-profile/player
   declarations: [
     AppComponent,
     NavbarComponent,
-    ComplevelComponent,
     AddteamComponent,
     AddplayerComponent,
     TeamComponent,
@@ -64,6 +63,7 @@ import { PlayerProfileComponent } from './components/pages/player-profile/player
     FooterComponent,
     ListMatchesComponent,
     PlayerProfileComponent,
+    JoinComponent,
 
 
   ],
